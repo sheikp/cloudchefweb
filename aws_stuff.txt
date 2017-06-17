@@ -1,0 +1,11 @@
+Pool Id
+us-east-1_Mr98zHlUu
+
+Pool ARN
+arn:aws:cognito-idp:us-east-1:030555009967:userpool/us-east-1_Mr98zHlUu
+
+App client id
+4lg7dl1if0tng7e0as9l7qo9jk
+
+Identity Pool ID
+us-east-1:800fc845-342e-44d5-b5a2-0e2379086aa5
