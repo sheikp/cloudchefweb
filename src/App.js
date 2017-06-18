@@ -74,22 +74,18 @@ class App extends Component {
 										<div>
 										<input type="radio" name="vote" value="Monica" id="radio2" /><label for="radio2">Monica</label>
 										</div><br /><div>
-										<input type="radio" name="vote" value="Rithika" id="radio3" /><label for="radio3">Sreeman</label>
+										<input type="radio" name="vote" value="Rithika" id="radio3" /><label for="radio3">Rithika</label>
 										</div><br /><div>
-										<input type="radio" name="vote" value="Dhanush" id="radio4" /><label for="radio3">Sreeman</label>
+										<input type="radio" name="vote" value="Dhanush" id="radio4" /><label for="radio4">Dhanush</label>
 										</div><br /><div>
-										<input type="radio" name="vote" value="Gowri" id="radio5" /><label for="radio4">Gowri</label>
+										<input type="radio" name="vote" value="Gowri" id="radio5" /><label for="radio5">Gowri</label>
 										</div><br /><div>
-										 <input type="radio" name="vote" value="Bhavin" id="radio6" /><label for="radio5">Bhavin</label>
+										 <input type="radio" name="vote" value="Bhavin" id="radio6" /><label for="radio6">Bhavin</label>
 										</div>
 									<br />
 									<div><button className="btn-register" onClick={(e) => this.callAPI(e)}>Submit</button></div>
 								
 							</div>
-							<div style={{float:'left'}}>
-								<svg class="chart"></svg>
-							</div>
-                {items.map(item => <p>{item.id}</p>)}
             </div>
 			
         );
