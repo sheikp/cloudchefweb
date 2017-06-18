@@ -66,7 +66,7 @@ class App extends Component {
 									}}/>			<br /><br />		
 										<button className="btn-login" onClick={(e) => this.doConfirm(e)}>Confirm</button>											
 							</div>
-							<div  style={{float:"left", align:"center", border:"1px solid red",width:"300px"}}>
+							<div  style={{float:"left", align:"center", border:"1px solid blue",width:"300px"}}>
 								
 									<div>
 											<input type="radio" name="vote" value="none" checked id="radio1" /><label for="radio1">No Vote</label>
