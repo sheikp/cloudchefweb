@@ -3,16 +3,16 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install
-      - npm install jquery
+      - cd $CODEBUILD_SRC_DIR; npm install
+      - cd $CODEBUILD_SRC_DIR; npm install jquery
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase..
   build:
     commands:
       - echo Build started on `date`
-      - npm run build
+      - cd $CODEBUILD_SRC_DIR; npm run build
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws s3 cp build s3://cloudchefweb.com/ --recursive --exclude "data.json"
+      - aws s3 cp $CODEBUILD_SRC_DIR/build s3://cloudchefweb.com/ --recursive --exclude "data.json"
