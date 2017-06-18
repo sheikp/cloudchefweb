@@ -5,6 +5,7 @@ phases:
     commands:
       - cd $CODEBUILD_SRC_DIR; npm install
       - cd $CODEBUILD_SRC_DIR; npm install jquery
+      - cd $CODEBUILD_SRC_DIR; npm install react-scripts
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase..
