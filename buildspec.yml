@@ -1,15 +1,17 @@
-version: 0.1
+version: 0.2
+
 phases:
-install:
-commands:
-- npm install
-pre_build:
-commands:
-- echo This is pre_build
-build:
-commands:
-- npm run build
-post_build:
-commands:
-- echo Build completed on `date`
-- aws s3 cp build s3://cloudchefweb.com/ --recursive
+  install:
+    commands:
+      - npm install
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - aws s3 cp build s3://cloudchefweb.com/ --recursive --exclude "data.json"
