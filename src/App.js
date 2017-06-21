@@ -245,6 +245,7 @@ class App extends Component {
 			 });
 			
 			alert('your vote registered successfully!');
+			location.reload();
 		}
 		else
 			alert('Login to cast your vote');
