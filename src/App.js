@@ -14,12 +14,6 @@ var poolData = {
 var tokenval = '';
 
 class App extends Component {
-    constructor(props, context) {
-        super(props, context);
-        this.state = {
-            items: []
-        }
-    }
 
     render() {
         const {items} = this.state;
